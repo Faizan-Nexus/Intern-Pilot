@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Automated Lead Enrichment Workflow
 
 > **Python + n8n + Groq AI** · Free APIs · Real-Time Dashboard · No paid subscriptions
@@ -128,3 +129,7 @@ Original columns + these new ones:
 ---
 
 *Built with ❤️ · Python + Flask + Groq + n8n*
+=======
+# Intern-Pilot
+AI‑powered internship matcher with n8n workflow automation and Flask dashboard.
+>>>>>>> 69a8281dacfc409ca95adf8fd9b334e2cbb74623

@@ -1,0 +1,75 @@
+{
+  "name": "Lead Enrichment Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "hours", "minutesInterval": 60 }] }
+      },
+      "id": "schedule-trigger",
+      "name": "Every Hour",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:5001/api/stats",
+        "options": {}
+      },
+      "id": "get-stats",
+      "name": "Get Lead Stats",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [{
+            "value1": "={{ $json[\"hot_leads\"] }}",
+            "operation": "larger",
+            "value2": 0
+          }]
+        }
+      },
+      "id": "check-hot",
+      "name": "Has Hot Leads?",
+      "type": "n8n-nodes-base.if",
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:5001/enrich",
+        "method": "POST",
+        "options": {}
+      },
+      "id": "trigger-enrich",
+      "name": "Trigger Enrichment",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [900, 200]
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:5001/n8n-webhook",
+        "method": "POST",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [{
+            "name": "stats_snapshot",
+            "value": "={{ JSON.stringify($json) }}"
+          }]
+        },
+        "options": {}
+      },
+      "id": "push-dashboard",
+      "name": "Push to Dashboard",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [900, 400]
+    }
+  ],
+  "connections": {
+    "Every Hour":       { "main": [[{ "node": "Get Lead Stats",      "type": "main", "index": 0 }]] },
+    "Get Lead Stats":   { "main": [[{ "node": "Has Hot Leads?",      "type": "main", "index": 0 }]] },
+    "Has Hot Leads?":   { "main": [[{ "node": "Trigger Enrichment",  "type": "main", "index": 0 }],
+                                   [{ "node": "Push to Dashboard",   "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" }
+}

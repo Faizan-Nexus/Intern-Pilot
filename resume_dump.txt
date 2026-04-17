@@ -1,0 +1,55 @@
+Muhammad Faizan Anjum Shah  
+Lahore, Pakistan | mohtramfaizan@gmail.com | (+92) -303 -8534264 | LinkedIn: fantastic -faizan | GitHub: Faizan -Nexus  
+  
+Professional Summary          
+AI-focused Computer Systems Engineering student and Merit Scholar with hands -on experience in machine learning, 
+automation workflows, and data -driven problem solving. Skilled in Python, SQL, Pandas, and API integrations, with practical 
+exposure to building  pipelines, dashboards, and AI -powered applications. Passionate about experimenting with AI tools (GPT, 
+Claude, n8n, Clay) to drive growth and efficiency in business operations  
+EDUCATION        
+Sukkur IBA University                                  Sukkur, Pakistan    
+B.E. in Computer Systems Engineering      Expected Graduation, June 2026  
+• Concentrations: Intelligence and Modeling/Computer Vision   
+• GPA: 3.55/4.00, Merit Scholar   
+• Related Coursework:  Deep Learning, Machine Learning, Artificial Intelligence, Database Systems, Object -Oriented 
+Programming, Probability & Statistics, Complex Variables & Transforms, Digital Signal Processing, Embedded 
+Systems, Robotics & Automation, Cybersecurity.     
+EXPERIENCE          
+Excelerate        Remote  
+Data Visualization Associate Intern      July 2020 – Aug 2025  
+• Processed and validated 1M+ rows from six multi -source datasets, improving overall data clarity and consistency.  
+• Cleaned, organized, and restructured datasets into a single analysis -ready master table used for reporting.   
+• Designed and built interactive dashboards in Looker Studio with KPI tracking, drill -down views, and automated 
+visualizations.  
+•  Supported data quality by identifying anomalies, correcting inconsistencies, and maintaining documentation.  
+• Awarded a $500 scholarship by St. Louis University for performance in ownership, communication, and quality 
+execution.   
+PROJECTS           
+Automated Lead Enrichment Workflow                 Self- Learning                         
+Lead                     Jan 2026  
+● Built a prototype workflow using Python + n8n to enrich leads from CSV files, integrate with APIs, and push results into 
+a dashboard.  
+ 
+AI-Powered Email Assistant                  Self- Learning                        
+Lead                     Apr 2025  
+• Integrated GPT API with a custom script to auto -generate professional email drafts for business communication.  
+ 
+Student Score Prediction      Kaggle Competition,  Remote   
+Team Lead        March 2025  
+• Led a Kaggle team project to build ML models predicting student performance, achieving 90% accuracy with feature 
+engineering.  
+Vision Transformer for Lung Disease Classification          IBA Sukkur 
+Team Lead                Sept 2025  
+● Managed image datasets, performed preprocessing, and evaluated classification performance using model metrics .  
+● Achieved 90.27% accuracy and visualized model focus patterns using Grad -CAM for analytical insights.   
+  
+ACTIVITIES AND LEADERSHIP         
+Computer Systems Engineering Society      IBA Sukkur, Pakistan  
+Active Member Data Science & AI Club       Oct 2023 – April 2024  
+● Active Member of a 100+ members Club, organizing and hosting Data Science & AI related workshops and webinars.  
+SKILLS          
+AI Tools & Automation:  GPT/Claude API integrations, n8n workflows, Clay (lead enrichment & automation)  
+Data Skills:  Excel (Pivot Tables, Charts, Functions), SQL, Pandas, NumPy, Data Cleaning, Data Validation, Dashboarding  
+Tools:  PostgreSQL, Looker Studio, Jupyter, Power BI (basic), VS Code, Git  
+Programming:  Python, SQL, MATLAB, C++  
+Core Competencies:  Trend analysis, anomaly detection, reporting, documentation, exploratory data analysis  

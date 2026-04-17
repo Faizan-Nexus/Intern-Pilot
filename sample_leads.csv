@@ -1,0 +1,11 @@
+id,first_name,last_name,email,company,title,website,phone,location,linkedin
+1,Ahmed,Khan,ahmed.khan@techsolutions.pk,Tech Solutions Pvt Ltd,CEO,techsolutions.pk,+92-300-1234567,Lahore Pakistan,linkedin.com/in/ahmed-khan
+2,Sarah,Johnson,sarah.j@innovatecorp.com,Innovate Corp,Marketing Director,innovatecorp.com,+1-555-234-5678,New York USA,linkedin.com/in/sarah-johnson
+3,Ali,Hassan,ali.hassan@digitalpk.com,Digital Pakistan,CTO,digitalpk.com,+92-321-9876543,Karachi Pakistan,linkedin.com/in/ali-hassan
+4,Emma,Williams,emma.w@growthagency.io,Growth Agency,Head of Sales,growthagency.io,+44-20-7946-0958,London UK,linkedin.com/in/emma-williams
+5,Omar,Sheikh,omar.sheikh@cloudsys.ae,CloudSys Middle East,VP Engineering,cloudsys.ae,+971-50-123-4567,Dubai UAE,linkedin.com/in/omar-sheikh
+6,Priya,Sharma,priya.sharma@startuphub.in,Startup Hub India,Product Manager,startuphub.in,+91-98765-43210,Bangalore India,linkedin.com/in/priya-sharma
+7,James,Miller,james.miller@invalid-domain-xyz.fake,FakeCorp,Sales Rep,,+1-555-000-0000,Unknown,
+8,Fatima,Malik,fatima.malik@unilever.com,Unilever,Brand Manager,unilever.com,+92-300-5555555,Islamabad Pakistan,linkedin.com/in/fatima-malik
+9,David,Chen,david.chen@alibaba.com,Alibaba Group,Business Dev,alibaba.com,+86-138-0013-8000,Shanghai China,linkedin.com/in/david-chen
+10,Zara,Ahmed,zara.ahmed@freelancer.net,Self-Employed,Freelance Consultant,zaraahmed.com,+92-333-7654321,Lahore Pakistan,linkedin.com/in/zara-ahmed

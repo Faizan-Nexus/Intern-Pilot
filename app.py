@@ -13,9 +13,10 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 import lead_enricher as le
 
-CORS(app)
+
 load_dotenv()
 app = Flask(__name__)
+CORS(app)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret")
 
 # Global enrichment state

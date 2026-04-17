@@ -9,9 +9,11 @@ import json
 import threading
 import pandas as pd
 from flask import Flask, render_template, request, jsonify, send_file, redirect
+from flask_cors import CORS
 from dotenv import load_dotenv
 import lead_enricher as le
 
+CORS(app)
 load_dotenv()
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret")
@@ -151,4 +153,6 @@ def n8n_webhook():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    port = int(os.environ.get("PORT", 5001))
+    app.run(debug=True, host="0.0.0.0", port=port)
+

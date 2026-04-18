@@ -453,7 +453,7 @@ async function uploadFile(file) {
   const fd = new FormData();
   fd.append('file', file);
   try {
-    const r    = await fetch('https://intern-pilot-2.onrender.com/upload', { method:'POST', body: fd });
+    const r    = await fetch('https://intern-pilot-3.onrender.com/upload', { method:'POST', body: fd });
     const data = await r.json();
     if (data.success) {
       toast(`Inserted ${data.inserted} internships!`, 'success');
@@ -479,7 +479,7 @@ async function startEnrich() {
   btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Analyzing…';
 
   try {
-      const r    = await fetch('https://intern-pilot-2.onrender.com/enrich', { 
+      const r    = await fetch('https://intern-pilot-3.onrender.com/enrich', { 
           method: 'POST', 
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({ cv_text: cvText })
@@ -504,7 +504,7 @@ async function startEnrich() {
 
 function pollEnrichment() {
   enrichPoll = setInterval(async () => {
-    const r    = await fetch('https://intern-pilot-2.onrender.com/api/enrichment-status');
+    const r    = await fetch('https://intern-pilot-3.onrender.com/api/enrichment-status');
     const s    = await r.json();
 
     const pct  = s.total > 0 ? Math.round((s.current / s.total) * 100) : 0;
@@ -536,7 +536,7 @@ function pollEnrichment() {
    STATS + CHARTS
 ═══════════════════════════════════════════ */
 async function loadStats() {
-  const r     = await fetch('https://intern-pilot-2.onrender.com/api/stats');
+  const r     = await fetch('https://intern-pilot-3.onrender.com/api/stats');
   const stats = await r.json();
 
   document.getElementById('statTotal').textContent    = stats.total    ?? 0;
@@ -611,7 +611,7 @@ function updateBarChart(scoreDist) {
    TABLE
 ═══════════════════════════════════════════ */
 async function loadLeads() {
-  const r  = await fetch('https://intern-pilot-2.onrender.com/api/leads');
+  const r  = await fetch('https://intern-pilot-3.onrender.com/api/leads');
   allLeads = await r.json();
   filterTable();
 }
@@ -680,7 +680,7 @@ function exportCSV() { window.location.href = '/export'; }
 
 async function clearLeads() {
   if (!confirm('Clear ALL internships? This cannot be undone.')) return;
-  const r    = await fetch('https://intern-pilot-2.onrender.com/api/clear', { method:'POST' });
+  const r    = await fetch('https://intern-pilot-3.onrender.com/api/clear', { method:'POST' });
   const data = await r.json();
   if (data.success) {
     toast('All internships cleared.', 'info');

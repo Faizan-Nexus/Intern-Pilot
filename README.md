@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-# Automated Lead Enrichment Workflow
-
+# Intern-Pilot
+AI‑powered internship matcher with n8n workflow automation and Flask dashboard.
 > **Python + n8n + Groq AI** · Free APIs · Real-Time Dashboard · No paid subscriptions
 
 Reads leads from CSV → validates emails → scores with AI → shows enriched data in a live dashboard → integrates with n8n automation.
@@ -35,7 +34,7 @@ Your Groq key is already configured. Optionally add Hunter.io key for email find
 ```bash
 python app.py
 ```
-Open: **http://localhost:5001**
+Open: **http://localhost:----**
 
 ### 4. Test with sample data
 1. Click **Upload CSV** → select `sample_leads.csv`
@@ -69,7 +68,7 @@ Auto-Email/
 ```bash
 npx n8n
 ```
-Opens at: **http://localhost:5678**
+Opens at: **http://localhost:----**
 
 ### Import the workflow
 1. Open n8n → **Workflows** → **Import**
@@ -130,6 +129,3 @@ Original columns + these new ones:
 
 *Built with ❤️ · Python + Flask + Groq + n8n*
 =======
-# Intern-Pilot
-AI‑powered internship matcher with n8n workflow automation and Flask dashboard.
->>>>>>> 69a8281dacfc409ca95adf8fd9b334e2cbb74623
